@@ -1,3 +1,5 @@
+package livraria;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
@@ -119,11 +121,11 @@ public class Main {
         String novoAutor = sc.nextLine();
         if (novoAutor.trim().isEmpty()) novoAutor = null;
 
-        System.out.print("Novo preço (ou -1 para manter): ");
+        System.out.print("Novo preço: ");
         double preco = lerDouble(sc);
         Double novoPreco = (preco < 0) ? null : preco;
 
-        System.out.print("Novo estoque (ou -1 para manter): ");
+        System.out.print("Novo estoque: ");
         int est = lerInt(sc);
         Integer novoEstoque = (est < 0) ? null : est;
 
