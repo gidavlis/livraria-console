@@ -121,11 +121,11 @@ public class Main {
         String novoAutor = sc.nextLine();
         if (novoAutor.trim().isEmpty()) novoAutor = null;
 
-        System.out.print("Novo preço: ");
+        System.out.print("Novo preço (Enter para manter): ");
         double preco = lerDouble(sc);
         Double novoPreco = (preco < 0) ? null : preco;
 
-        System.out.print("Novo estoque: ");
+        System.out.print("Novo estoque (Enter para manter): ");
         int est = lerInt(sc);
         Integer novoEstoque = (est < 0) ? null : est;
 
